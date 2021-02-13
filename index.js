@@ -32,7 +32,7 @@ setInterval(() => {
 	let now = moment();
 	let dddd = now.format('dddd');
 
-	time_channel.setName(`⌚ ${now.format(`[${days[dddd]}], LT`)}`);
+	time_channel.setName(`.`)}`);
 }, MINUTE);
 
 client.login(process.env.TOKEN);
