@@ -22,6 +22,10 @@ client.on('ready', () => {
     time_channel = client.channels.get(process.env.TIME_ID);
 
     channel.send('!d bump').catch(e => console.log('FAILED: ', e));
+
+    client.channels.get(process.env.VOICE)
+    .join()
+    .catch(console.error);
 });
 
 setInterval(() => {
