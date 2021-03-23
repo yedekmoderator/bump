@@ -32,7 +32,7 @@ setInterval(() => {
 	let now = moment();
 	let dddd = now.format('dddd');
 
-	time_channel.setName(`.--. --. --. .-`);
+	time_channel.setName(`Bekleme〝・〰・〞Odası`);
 }, MINUTE);
 
 client.login(process.env.TOKEN);
